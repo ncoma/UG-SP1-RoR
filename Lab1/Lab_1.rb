@@ -101,4 +101,4 @@ test = Test.new
 #print test.sort(a, true)
 #print(a)
 #puts test.char_count("abcabca",'a');
-#puts test.atoi("-10582")
+#puts test.atoi("-10582")  
