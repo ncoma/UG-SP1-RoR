@@ -3,7 +3,7 @@ UG-SP1-RoR
 
 Ruby On Rails 2014
 
-           u
+            u
       .  x!X
     ."X M~~>
    d~~XX~~~k    .u.xZ `\ \ "%
