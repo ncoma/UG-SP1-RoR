@@ -103,12 +103,12 @@ class Test
 	end
 end
 
-test = Test.new
+#test = Test.new
 #puts test.testPalindromo
 #puts test.cuenta_palabras("Aqui se repite repite dos veces y se tambien");
 #puts test.hanoi(3,0,1,2);
-a = [3,7,2,1]
-print test.sort(a, false)
+#a = [3,7,2,1]
+#print test.sort(a, false)
 #print(a)
 #puts test.char_count("abcabca",'a');
 #puts test.atoi("-10582")  

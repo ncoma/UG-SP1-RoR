@@ -1,3 +1,4 @@
+# UG - Pablo Miranda - 11002147
 class Dessert
 	@@count = 0
     def initialize(name, size, calories)

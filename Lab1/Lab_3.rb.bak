@@ -5,7 +5,7 @@ module Action
 	end
   
 	def run(v)		# velocidad en m/s
-		t = 10 / v
+		t = 10.0 / v
 		sleep(t)
 		p "10 metros recorridos en un tiempo de #{t} segundos a una velocidad de #{v} m/s"
 	end
@@ -38,8 +38,8 @@ class Cricket
 	end
 end
 
-peter = Rabbit.new("Peter")
-jiminy = Cricket.new("Jiminy")
+#peter = Rabbit.new("Peter")
+#jiminy = Cricket.new("Jiminy")
 
-peter.jump
-jiminy.run(100)
+#peter.jump
+#jiminy.run(100)

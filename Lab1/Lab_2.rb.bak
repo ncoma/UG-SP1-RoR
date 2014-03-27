@@ -75,6 +75,6 @@ end
 
 #des = Dessert.new("El+nombre",5,150)
 #p des.healthy?
-jelly = JellyBean.new("El+nombre",5,150,"sabor")
-p jelly
-p Dessert.count
+#jelly = JellyBean.new("El+nombre",5,150,"sabor")
+#p jelly
+#p Dessert.count

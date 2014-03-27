@@ -1,4 +1,4 @@
-# encoding: utf-8
+# UG - Pablo Miranda - 11002147
 module RubyModule
 	def palindromo?(str)
 		s = str.gsub(/\W/,nil.to_s).downcase

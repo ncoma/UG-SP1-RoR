@@ -1,3 +1,4 @@
+# UG - Pablo Miranda - 11002147
 module Action
 	def jump
 		@distance = rand(4) + 2
@@ -38,8 +39,8 @@ class Cricket
 	end
 end
 
-peter = Rabbit.new("Peter")
-jiminy = Cricket.new("Jiminy")
+#peter = Rabbit.new("Peter")
+#jiminy = Cricket.new("Jiminy")
 
-peter.jump
-jiminy.run(100)
+#peter.jump
+#jiminy.run(100)
