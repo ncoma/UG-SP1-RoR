@@ -24,11 +24,21 @@ module RubyModule
 	a = b.dup
 	a.each{	
 		t = a.length.-1
-		t.times do |i|
-			if(a[i+1] < a[i])
-				aux = a[i]
-				a[i] = a[i+1]
-				a[i+1] = aux
+		if(asc) 
+			t.times do |i|
+				if(a[i+1] < a[i])
+					aux = a[i]
+					a[i] = a[i+1]
+					a[i+1] = aux
+				end
+			end
+		else
+			t.times do |i|
+				if(a[i+1] > a[i])
+					aux = a[i]
+					a[i] = a[i+1]
+					a[i+1] = aux
+				end
 			end
 		end
 	b
@@ -93,12 +103,12 @@ class Test
 	end
 end
 
-test = Test.new
+#test = Test.new
 #puts test.testPalindromo
 #puts test.cuenta_palabras("Aqui se repite repite dos veces y se tambien");
 #puts test.hanoi(3,0,1,2);
 #a = [3,7,2,1]
-#print test.sort(a, true)
+#print test.sort(a, false)
 #print(a)
 #puts test.char_count("abcabca",'a');
 #puts test.atoi("-10582")  
