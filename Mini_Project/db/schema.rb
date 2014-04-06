@@ -11,10 +11,45 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140403052431) do
+ActiveRecord::Schema.define(version: 20140403233651) do
 
   create_table "groups", force: true do |t|
     t.string   "nombre"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "matches", force: true do |t|
+    t.date     "fecha"
+    t.integer  "fase"
+    t.integer  "estado"
+    t.integer  "team_id"
+    t.integer  "team_id_2"
+    t.string   "marcador"
+    t.boolean  "ganador"
+    t.boolean  "perdedor"
+    t.integer  "group_id"
+    t.integer  "stadium_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "stadia", force: true do |t|
+    t.string   "nombre"
+    t.string   "ciudad"
+    t.date     "fecha"
+    t.integer  "capacidad"
+    t.string   "foto"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "teams", force: true do |t|
+    t.string   "nombre"
+    t.string   "entrenador"
+    t.string   "bandera"
+    t.string   "uniforme"
+    t.string   "historial"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
